@@ -3,15 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgeoSharp", "AlgeoSharp\AlgeoSharp.csproj", "{E14D9202-CCD9-46F2-8501-4A38E72C4F12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgeoSharp.Visualization", "AlgeoSharp.Visualization\AlgeoSharp.Visualization.csproj", "{F8AA5A3F-678B-4A75-8CB5-AA38354B3521}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1", "Example1\Example1.csproj", "{1AE92CE5-18F7-4522-842B-33EE45E6BCD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AE92CE5-18F7-4522-842B-33EE45E6BCD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE92CE5-18F7-4522-842B-33EE45E6BCD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AE92CE5-18F7-4522-842B-33EE45E6BCD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AE92CE5-18F7-4522-842B-33EE45E6BCD4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E14D9202-CCD9-46F2-8501-4A38E72C4F12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E14D9202-CCD9-46F2-8501-4A38E72C4F12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E14D9202-CCD9-46F2-8501-4A38E72C4F12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E14D9202-CCD9-46F2-8501-4A38E72C4F12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8AA5A3F-678B-4A75-8CB5-AA38354B3521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8AA5A3F-678B-4A75-8CB5-AA38354B3521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8AA5A3F-678B-4A75-8CB5-AA38354B3521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8AA5A3F-678B-4A75-8CB5-AA38354B3521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
