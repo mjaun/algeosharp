@@ -2,6 +2,8 @@
 
 A class library for using conformal geometric algebra in C#
 
+![Example Application](Screenshots/ba12ee9.png)
+
 A lot of operators are overloaded so that you can write your calculations in C# source code almost like you would do in a math software. But please be aware that I didn't have enough time to fully understand how the theory of geometric algebra really works. I just had an exciting time by implementing all the operators in C# so that it becomes easy to play with those calculations. This means that there is ABSOLUTELY NO WARRANTY that the calculations are correct and you should expect bugs in this library (it is not tested)!
 
 Here are some useful links to get an idea about the theory and the uses of geometric algebra:
