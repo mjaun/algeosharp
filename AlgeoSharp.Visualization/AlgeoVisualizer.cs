@@ -32,7 +32,7 @@ namespace AlgeoSharp.Visualization
 
 			Eye = MultiVector.Vector(10, 10, 10);
 			Target = MultiVector.Vector(0, 0, 0);
-			Up = MultiVector.Vector(0, 0, 1);
+			Up = MultiVector.Vector(0, 1, 0);
 
 			VectorArrowLength = 0.5f;
 			VectorArrowRadius = 0.15f;
