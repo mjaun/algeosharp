@@ -390,7 +390,7 @@ namespace AlgeoSharp
             foreach (Blade b1 in v1.Blades)
                 foreach (Blade b2 in v2.Blades)
                     result += Blade.InnerProduct(b1, b2);
-            
+
             return result;
         }
 

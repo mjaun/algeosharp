@@ -15,7 +15,7 @@ namespace AlgeoSharp
 
 
         Basis basis;
-        public Basis Basis 
+        public Basis Basis
         {
             get { return basis; }
         }
