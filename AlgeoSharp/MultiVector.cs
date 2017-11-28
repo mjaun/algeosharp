@@ -183,8 +183,6 @@ namespace AlgeoSharp
                         ret[blade.Basis] = reverse;
                     else
                         ret[blade.Basis] = -reverse;
-
-                    return ret;
                 }
 
                 return ret;
