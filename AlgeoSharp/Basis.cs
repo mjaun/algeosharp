@@ -14,7 +14,7 @@ namespace AlgeoSharp
         public static readonly Basis E1 = new Basis(1 << 0, false);
         public static readonly Basis E2 = new Basis(1 << 1, false);
         public static readonly Basis E3 = new Basis(1 << 2, false);
-        
+
         // Minkowski Metric
         public static readonly Basis EMINUS = new Basis(1 << 3, false);
         public static readonly Basis EPLUS = new Basis(1 << 4, false);
@@ -25,13 +25,13 @@ namespace AlgeoSharp
 
         // Combined
         public static readonly Basis EPLANE = new Basis(Basis.EMINUS.bitMask | Basis.EPLUS.bitMask, false);
-        
+
         public static readonly Basis E12 = new Basis(Basis.E1.bitMask | Basis.E2.bitMask, false);
         public static readonly Basis E13 = new Basis(Basis.E1.bitMask | Basis.E3.bitMask, false);
         public static readonly Basis E23 = new Basis(Basis.E2.bitMask | Basis.E3.bitMask, false);
         public static readonly Basis E123 = new Basis(Basis.E1.bitMask | Basis.E2.bitMask | Basis.E3.bitMask, false);
 
-        
+
         private static Dictionary<int, MultiVector> geometricProductCache = new Dictionary<int, MultiVector>();
         private static Dictionary<int, Blade> outerProductCache = new Dictionary<int, Blade>();
         private static Dictionary<int, Blade> innerProductCache = new Dictionary<int, Blade>();
