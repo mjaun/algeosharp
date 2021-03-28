@@ -15,7 +15,7 @@ namespace AlgeoSharp.Visualization
 			public int VboId;
 			public int EboId;
 			public int NumElements;
-			public PrimitiveType Mode;
+			public BeginMode Mode;
 		}
 
 		Vbo vectorLineVbo;
@@ -195,7 +195,7 @@ namespace AlgeoSharp.Visualization
 			deleteVbo(circleVbo);
 		}
 
-		private Vbo createVbo(PrimitiveType mode, Vector3[] vertices, ushort[] elements = null)
+		private Vbo createVbo(BeginMode mode, Vector3[] vertices, ushort[] elements = null)
 		{
 			Vbo result = new Vbo();
 			result.Mode = mode;
@@ -307,7 +307,7 @@ namespace AlgeoSharp.Visualization
 				}
 			}
 
-			PrimitiveType mode = (wires) ? PrimitiveType.Lines : PrimitiveType.Triangles;
+			BeginMode mode = (wires) ? BeginMode.Lines : BeginMode.Triangles;
 			return createVbo(mode, vertices, elements);
 		}
 
@@ -347,7 +347,7 @@ namespace AlgeoSharp.Visualization
 				};
 			}
 
-			return createVbo(PrimitiveType.Lines, vertices);
+			return createVbo(BeginMode.Lines, vertices);
 		}
 
 		private Vbo createLineVbo(float infinity)
@@ -368,7 +368,7 @@ namespace AlgeoSharp.Visualization
 				Z = +infinity,
 			};
 
-			return createVbo(PrimitiveType.Lines, vertices);
+			return createVbo(BeginMode.Lines, vertices);
 		}
 
 		private Vbo createCircleVbo(int lines)
@@ -387,7 +387,7 @@ namespace AlgeoSharp.Visualization
 				};
 			}
 
-			return createVbo(PrimitiveType.LineLoop, vertices);
+			return createVbo(BeginMode.LineLoop, vertices);
 		}
 
 		private Vbo createVectorLineVbo()
@@ -408,7 +408,7 @@ namespace AlgeoSharp.Visualization
 				Z = 1.0f,
 			};
 
-			return createVbo(PrimitiveType.Lines, vertices);
+			return createVbo(BeginMode.Lines, vertices);
 		}
 
 		private Vbo createVectorArrowVbo(int triangles, float radius, float length)
@@ -429,7 +429,7 @@ namespace AlgeoSharp.Visualization
 				};
 			}
 
-			return createVbo(PrimitiveType.TriangleFan, vertices);
+			return createVbo(BeginMode.TriangleFan, vertices);
 		}
 
 
